@@ -1,7 +1,7 @@
 import './MovieCard.css';
 import noimg from '../assets/no-img.png'
 
-function MovieCard(props) {
+const MovieCard = (props) => {
     const { title, year, poster, id } = props; 
 
     return (
@@ -23,4 +23,4 @@ function MovieCard(props) {
     );
   }
   
-  export default MovieCard;
+export default MovieCard;

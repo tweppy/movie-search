@@ -6,20 +6,21 @@ const DisplayMovies = (props) => {
 
   const moviesComponents = movies.map((val) => {
     return (
-        <MovieCard 
+      <MovieCard 
         title={val.Title} 
         year={val.Year} 
         poster={val.Poster} 
         key={val.imdbID}
-        id={val.imdbID} />
+        id={val.imdbID} 
+      />
     )
-});
+  });
 
-    return (
-      <div className="display-movies">
-        { moviesComponents }
-      </div>
-    )
-  }
+  return (
+    <div className="display-movies">
+      { moviesComponents }
+    </div>
+  );
+}
   
-  export default DisplayMovies;
+export default DisplayMovies;
